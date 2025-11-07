@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية | شركة الرفاق للإلكترونات</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        /* القسم الترحيبي */
+        .hero {
+            background: linear-gradient(135deg, #0078d7, #005fa3);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .hero img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            background: white;
+            color: #0078d7;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #f5f5f5;
+            transform: scale(1.05);
+        }
+
+        /* قسم الخدمات */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin: 50px auto;
+            max-width: 1000px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            width: 280px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .service-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #0078d7;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #333;
+            font-size: 15px;
+        }
+
+        /* تواصل سريع */
+        .contact-banner {
+            background: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        .contact-banner h3 {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="sidebar-container"></div>
+
+    <div class="content">
+        <!-- القسم الترحيبي -->
+        <section class="hero">
+            <img src="images/logo.png" alt="شعار الشركة">
+            <h1>شركة الرفاق للإلكترونات</h1>
+            <p>نواكب التطور لنقدّم أحدث الحلول الإلكترونية في ليبيا.</p>
+            <button onclick="window.location.href='/pages/cotactus.html'">تعرف أكثر</button>
+        </section>
+
+        <!-- قسم الخدمات -->
+        <section class="services">
+            <div class="service-card">
+                <img src="images/sale.svg" alt="بيع الأجهزة">
+                <h3>بيع الأجهزة</h3>
+                <p>نوفر أحدث الأجهزة الإلكترونية من أفضل العلامات التجارية العالمية بأسعار منافسة.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/repair.svg" alt="الصيانة">
+                <h3>الصيانة</h3>
+                <p>فريقنا المختص يقدم خدمات صيانة دقيقة وسريعة للأجهزة الإلكترونية المختلفة.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/support.svg" alt="الدعم الفني">
+                <h3>الدعم الفني</h3>
+                <p>خدمة عملاء متواصلة لتقديم المساعدة والإرشاد في أي وقت.</p>
+            </div>
+        </section>
+
+        <!-- قسم تواصل سريع -->
+        <section class="contact-banner">
+            <h3>تواصل معنا عبر وسائل التواصل</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1BLNoTK9JK/" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                 <a href="https://www.tiktok.com/@ahmed.gx0?_r=1&_t=ZM-91CldtSDwls" target="_blank">
+                    <img src="images/tiktok.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
