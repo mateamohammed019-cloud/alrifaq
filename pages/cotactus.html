@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عن الشركة</title>
     <link rel="stylesheet" href="../style.css">
-        <link rel="icon" type="image/png" href="/images/logo.png">
-
+    <link rel="icon" type="image/png" href="/images/logo.png">
 
     <style>
         .about-container {
@@ -31,32 +30,37 @@
             margin-bottom: 20px;
         }
 
-        .contact-info {
+        /* حاويات المعلومات */
+        .info-box, .contact-box {
+            background: #f7f9fc;
+            padding: 20px;
+            border-radius: 14px;
+            margin-top: 25px;
+            border-right: 5px solid #0078d7;
             text-align: right;
-            margin-top: 30px;
-            border-top: 2px solid #0078d7;
-            padding-top: 20px;
         }
 
-        .contact-info h3 {
+        .info-box h3, .contact-box h3 {
             color: #0078d7;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .contact-info ul {
+        .info-box ul, .contact-box ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
-        .contact-info li {
-            margin-bottom: 8px;
-            font-size: 16px;
+        .info-box li, .contact-box li {
+            font-size: 17px;
+            margin-bottom: 10px;
             color: #333;
         }
 
+        /* أيقونات التواصل */
         .social-icons {
             margin-top: 25px;
-            
+            text-align: center;
         }
 
         .social-icons a {
@@ -66,7 +70,7 @@
         }
 
         .social-icons a:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         .social-icons img {
@@ -82,36 +86,51 @@
 
     <div class="content">
         <div class="about-container">
+
             <h2>عن شركة الرفاق للإلكترونات</h2>
             <p>
                 شركة الرفاق للإلكترونات هي شركة رائدة في مجال الإلكترونيات والأجهزة الذكية.
                 نسعى لتقديم أحدث التقنيات وخدمات ما بعد البيع بأعلى جودة لضمان رضا عملائنا.
             </p>
 
-            <div class="contact-info">
-                <h3>اتصل بنا</h3>
+            <!-- قسم معلومات الشركة -->
+            <div class="info-box">
+                <h3>معلومات الشركة</h3>
                 <ul>
-                    <li>📞 الهاتف:  0941000668</li>
-                    <li>📧 البريد الإلكتروني: alrafaqshrkh@gmail.com</li>
-                    <li>📍 العنوان: بنغازي، ليبيا</li>
+                    <li>🔧 التخصص: بيع وصيانة الأجهزة الإلكترونية</li>
+                    <li>⭐ خبرة تتجاوز 10 سنوات في السوق الليبي</li>
+                    <li>🏬 فروع متعددة — سيتم الإعلان عنها قريباً</li>
                 </ul>
             </div>
 
+            <!-- قسم اتصل بنا -->
+            <div class="contact-box">
+                <h3>اتصل بنا</h3>
+                <ul>
+                    <li>📞 الهاتف: <strong>0941000668</strong></li>
+                    <li>📧 البريد الإلكتروني: <strong>alrafaqshrkh@gmail.com</strong></li>
+                    <li>📍 العنوان: بنغازي – ليبيا</li>
+                </ul>
+            </div>
+
+            <!-- أيقونات التواصل الاجتماعي -->
             <div class="social-icons">
                 <a href="https://www.facebook.com/share/1BLNoTK9JK/" target="_blank">
                     <img src="../images/facebook.png" alt="Facebook">
                 </a>
+
                 <a href="https://wa.me/+218941000668" target="_blank">
-                    <img src="../images/whatsapp.webp" alt="Instagram">
+                    <img src="../images/whatsapp.webp" alt="Whatsapp">
                 </a>
+
                 <a href="https://www.tiktok.com/@ahmed.gx0?_r=1&_t=ZM-91CldtSDwls" target="_blank">
-                    <img src="../images/tiktok.png" alt="Facebook">
+                    <img src="../images/tiktok.png" alt="Tiktok">
+                </a>
             </div>
+
         </div>
     </div>
 
     <script src="../script.js"></script>
 </body>
 </html>
-
-
