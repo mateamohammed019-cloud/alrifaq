@@ -31,31 +31,49 @@
         }
 
         /* حاويات المعلومات */
-        .info-box, .contact-box {
-            background: #f7f9fc;
-            padding: 20px;
-            border-radius: 14px;
-            margin-top: 25px;
-            border-right: 5px solid #0078d7;
-            text-align: right;
-        }
+        /* حاويات المعلومات والاتصال – شكل أوضح */
+.info-box, .contact-box {
+    background: #eef4ff; /* خلفية أوضح */
+    padding: 25px;
+    border-radius: 14px;
+    margin-top: 25px;
+    border-right: 6px solid #005bb5; /* خط جانبي واضح */
+    border-left: 2px solid #bcd4ff;
+    border-top: 2px solid #d6e6ff;
+    border-bottom: 2px solid #d6e6ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* ظل يوضح الكونتينر */
+    text-align: right;
+    transition: 0.3s ease;
+}
 
-        .info-box h3, .contact-box h3 {
-            color: #0078d7;
-            margin-bottom: 15px;
-        }
+/* تأثير عند المرور */
+.info-box:hover, .contact-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
 
-        .info-box ul, .contact-box ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+/* العناوين داخل الكونتينر */
+.info-box h3, .contact-box h3 {
+    color: #005bb5;
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #bcd4ff;
+    padding-bottom: 8px;
+}
 
-        .info-box li, .contact-box li {
-            font-size: 17px;
-            margin-bottom: 10px;
-            color: #333;
-        }
+/* النصوص */
+.info-box ul, .contact-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box li, .contact-box li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
 
         /* أيقونات التواصل */
         .social-icons {
@@ -134,4 +152,5 @@
     <script src="../script.js"></script>
 </body>
 </html>
+
 
